@@ -92,4 +92,37 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+#box-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 0;
+}
+#box-container .danger-box {
+  background: red;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box-container .info-box {
+  background: blue;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box-container .success-box {
+  background: green;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

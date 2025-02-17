@@ -48,3 +48,33 @@ $padding-sm: 8px;
         border-radius: 50%;
     }
 }
+
+@mixin create-box($box-color){
+    background: $box-color;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-container{
+    display: flex;
+    width: 80%;    
+    margin: 0 auto;
+    justify-content: center;
+    gap: $padding-sm*2;
+    padding: $padding-sm*5 0;
+
+    .danger-box{
+        @include create-box(red);
+    }
+
+    .info-box{
+        @include create-box(blue);
+    }
+    
+    .success-box{
+        @include create-box(green);
+    }
+}
