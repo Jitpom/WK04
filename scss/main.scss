@@ -5,6 +5,27 @@ $primary-color: #F7CFD8;
 $secondary-color: #73C7C7;
 $bg-color: #F4F8D3;
 
+$padding-sm: 8px;
+
+#top-nav{
+    nav{
+        display: flex;
+        justify-content: center;
+        li{
+            list-style: none;
+            padding: $padding-sm $padding-sm*2;
+            cursor: pointer;
+            transition: 500ms all ease-in-out;
+
+            &:hover{
+                background: $secondary-color;
+            }
+        }
+    }
+}
+
+
+
 #shape-container{
     display: flex;
     flex-direction: column;
