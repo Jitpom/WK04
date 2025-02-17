@@ -49,10 +49,10 @@ $padding-sm: 8px;
     }
 }
 
-@mixin create-box($box-color){
+@mixin create-box($box-color, $width: 100px, $height: 100px){
     background: $box-color;
-    height: 100px;
-    width: 100px;
+    height: $width;
+    width: $height;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ $padding-sm: 8px;
     padding: $padding-sm*5 0;
 
     .danger-box{
-        @include create-box(rgb(251, 115, 115));
+        @include create-box(rgb(251, 115, 115), 200px, 200px);
     }
 
     .info-box{
@@ -75,7 +75,7 @@ $padding-sm: 8px;
     }
     
     .success-box{
-        @include create-box(rgb(133, 255, 133));
+        @include create-box(rgb(133, 255, 133), 200px, 200px);
     }
 
     h1{

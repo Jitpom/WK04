@@ -104,8 +104,8 @@ body {
 }
 #box-container .danger-box {
   background: rgb(251, 115, 115);
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,8 +120,8 @@ body {
 }
 #box-container .success-box {
   background: rgb(133, 255, 133);
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
