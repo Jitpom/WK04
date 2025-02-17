@@ -83,7 +83,7 @@ $padding-sm: 8px;
     }
 }
 
-.circle{
+%circle{
     border-radius: 50%;
     background: $primary-color;
     display: flex;
@@ -98,19 +98,19 @@ $padding-sm: 8px;
     gap: $padding-sm*3;
 
     .circle-sm{
-        @extend .circle;
+        @extend %circle;
         width: 100px;
         height: 100px;
     }
 
     .circle-md{
-        @extend .circle;
+        @extend %circle;
         width: 200px;
         height: 200px;
     }
 
     .circle-lg{
-        @extend .circle;
+        @extend %circle;
         width: 300px;
         height: 300px;
     }

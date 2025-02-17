@@ -87,7 +87,7 @@ body {
   width: 100px;
   height: 100px;
 }
-#shape-container .circle, #shape-container #extend-container .circle-lg, #extend-container #shape-container .circle-lg, #shape-container #extend-container .circle-md, #extend-container #shape-container .circle-md, #shape-container #extend-container .circle-sm, #extend-container #shape-container .circle-sm {
+#shape-container .circle {
   background: #73C7C7;
   width: 100px;
   height: 100px;
@@ -130,7 +130,7 @@ body {
   text-transform: uppercase;
 }
 
-.circle, #extend-container .circle-lg, #extend-container .circle-md, #extend-container .circle-sm {
+#extend-container .circle-lg, #extend-container .circle-md, #extend-container .circle-sm {
   border-radius: 50%;
   background: #F7CFD8;
   display: flex;
