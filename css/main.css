@@ -66,15 +66,15 @@ body {
   align-items: center;
   gap: 50px;
   height: 800px;
-  background: darkgrey;
+  background: #F4F8D3;
 }
 #shape-container .box {
-  background: red;
+  background: #F7CFD8;
   width: 100px;
   height: 100px;
 }
 #shape-container .circle {
-  background: blue;
+  background: #73C7C7;
   width: 100px;
   height: 100px;
   border-radius: 50%;
