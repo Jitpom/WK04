@@ -87,7 +87,7 @@ body {
   width: 100px;
   height: 100px;
 }
-#shape-container .circle {
+#shape-container .circle, #shape-container #extend-container .circle-lg, #extend-container #shape-container .circle-lg, #shape-container #extend-container .circle-md, #extend-container #shape-container .circle-md, #shape-container #extend-container .circle-sm, #extend-container #shape-container .circle-sm {
   background: #73C7C7;
   width: 100px;
   height: 100px;
@@ -128,4 +128,31 @@ body {
 }
 #box-container h1 {
   text-transform: uppercase;
+}
+
+.circle, #extend-container .circle-lg, #extend-container .circle-md, #extend-container .circle-sm {
+  border-radius: 50%;
+  background: #F7CFD8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#extend-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 24px;
+}
+#extend-container .circle-sm {
+  width: 100px;
+  height: 100px;
+}
+#extend-container .circle-md {
+  width: 200px;
+  height: 200px;
+}
+#extend-container .circle-lg {
+  width: 300px;
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */
