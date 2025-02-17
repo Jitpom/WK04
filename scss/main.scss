@@ -67,14 +67,18 @@ $padding-sm: 8px;
     padding: $padding-sm*5 0;
 
     .danger-box{
-        @include create-box(red);
+        @include create-box(rgb(251, 115, 115));
     }
 
     .info-box{
-        @include create-box(blue);
+        @include create-box(rgb(120, 120, 255));
     }
     
     .success-box{
-        @include create-box(green);
+        @include create-box(rgb(133, 255, 133));
+    }
+
+    h1{
+        text-transform: uppercase;
     }
 }

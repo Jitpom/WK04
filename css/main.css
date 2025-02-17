@@ -103,7 +103,7 @@ body {
   padding: 40px 0;
 }
 #box-container .danger-box {
-  background: red;
+  background: rgb(251, 115, 115);
   height: 100px;
   width: 100px;
   display: flex;
@@ -111,7 +111,7 @@ body {
   align-items: center;
 }
 #box-container .info-box {
-  background: blue;
+  background: rgb(120, 120, 255);
   height: 100px;
   width: 100px;
   display: flex;
@@ -119,10 +119,13 @@ body {
   align-items: center;
 }
 #box-container .success-box {
-  background: green;
+  background: rgb(133, 255, 133);
   height: 100px;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#box-container h1 {
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
