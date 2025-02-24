@@ -1,11 +1,18 @@
 @use "reset";
 @use "setting";
+@use "sass:math";
+
+// Because @import is no longer available, it is replaced with @use
+
 
 $primary-color: #F7CFD8;
 $secondary-color: #73C7C7;
 $bg-color: #F4F8D3;
 
 $padding-sm: 8px;
+$padding-md: 16px;
+$padding-lg: 32px;
+$padding-xl: 64px;
 
 #top-nav{
     nav{
@@ -51,8 +58,8 @@ $padding-sm: 8px;
 
 @mixin create-box($box-color, $width: 100px, $height: 100px){
     background: $box-color;
-    height: $width;
-    width: $height;
+    height: $height;
+    width: $width;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,15 +70,16 @@ $padding-sm: 8px;
     width: 80%;    
     margin: 0 auto;
     justify-content: center;
-    gap: $padding-sm*2;
-    padding: $padding-sm*5 0;
+    gap: $padding-md;
+    padding: $padding-xl 0;
 
     .danger-box{
         @include create-box(rgb(251, 115, 115), 200px, 200px);
     }
 
     .info-box{
-        @include create-box(rgb(120, 120, 255));
+        // @include create-box(rgb(120, 120, 255));
+        @include create-box(rgb(96, 94, 94),200px);
     }
     
     .success-box{
@@ -83,9 +91,9 @@ $padding-sm: 8px;
     }
 }
 
-%circle{
+%circle{ /*place holder, it will not be compiled into css*/
     border-radius: 50%;
-    background: $primary-color;
+    background: desaturate($primary-color, 10%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +109,7 @@ $padding-sm: 8px;
         @extend %circle;
         width: 100px;
         height: 100px;
+        border: math.max(60px, 3px) solid red;
     }
 
     .circle-md{

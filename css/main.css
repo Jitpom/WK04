@@ -100,7 +100,7 @@ body {
   margin: 0 auto;
   justify-content: center;
   gap: 16px;
-  padding: 40px 0;
+  padding: 64px 0;
 }
 #box-container .danger-box {
   background: rgb(251, 115, 115);
@@ -111,9 +111,9 @@ body {
   align-items: center;
 }
 #box-container .info-box {
-  background: rgb(120, 120, 255);
+  background: rgb(96, 94, 94);
   height: 100px;
-  width: 100px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,9 +130,9 @@ body {
   text-transform: uppercase;
 }
 
-#extend-container .circle-lg, #extend-container .circle-md, #extend-container .circle-sm {
+#extend-container .circle-lg, #extend-container .circle-md, #extend-container .circle-sm { /*place holder, it will not be compiled into css*/
   border-radius: 50%;
-  background: #F7CFD8;
+  background: #f4d2da;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +147,7 @@ body {
 #extend-container .circle-sm {
   width: 100px;
   height: 100px;
+  border: 60px solid red;
 }
 #extend-container .circle-md {
   width: 200px;
